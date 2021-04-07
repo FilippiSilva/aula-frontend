@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Usuários</h1>
+    <p>
+        <form id="form-user">
+            <p>
+                <label for="name">Nome:</label>
+                <input name="name" type="text" required />
+            </p>
+            <p>
+                <label>Email:</label>
+                <input name="email" type="email" required />
+            </p>
+            <p>
+                <label>Idade:</label>
+                <input name="age" type="number" min="18" max="100" />
+            </p>
+            <button type="submit">Salvar</button>
+            <button type="button" onclick="resetForm()">Limpar</button>
+        </form>
+    </p>
+    <p>
+        <table id="table-users" border="1">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Idade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </p>
+
+
+    <script src="service.js"></script>
+</body>
+</html>
