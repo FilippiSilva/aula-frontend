@@ -16,15 +16,15 @@
                 <form id="form-user">
                     <div class="mb-3">
                         <label class="form-label">Nome:</label>
-                        <input name="name" type="text" class="form-control" required="">
+                        <input id="name" name="name" type="text" class="form-control" required="">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Email:</label>
-                        <input name="email" type="email" class="form-control" required="">
+                        <input id="email" name="email" type="email" class="form-control" required="">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Idade:</label>
-                        <input name="age" type="number" min="18" class="form-control" max="100">
+                        <input id="age" name="age" type="number" min="18" class="form-control" max="100">
                     </div>
                     <button type="submit" class="btn btn-success">Salvar</button>
                     <button type="button" onclick="resetForm()" class="btn btn-secondary">Limpar</button>
@@ -45,9 +45,9 @@
         </table>
     
     </div>
-    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="service.js"></script>
-
 </body>
 </html>
